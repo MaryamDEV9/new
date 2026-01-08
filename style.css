@@ -1,5 +1,5 @@
 header{
-    background-image: url("images/hero-2-bg.4f136e2cb3334913d0ce.png");
+    background-image: url("hero-2-bg.4f136e2cb3334913d0ce.png");
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -11,4 +11,5 @@ header{
 
 .phone{
     width: 600px;
+
 }
