@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body class="bg-white dark:bg-black transition-colors duration-500  dark:text-white">
+   <div class="container">
+    <header class="">
+        <nav class="p-5 flex justify-between items-center ">
+            <div>
+                <h2 class="font-bold text-xl ">WE<span class="text-blue-500">XY</span></h2>
+            </div>
+            <div>
+                <ul  class="font-medium text-l flex m-px  ">
+                    <li><a href="#" class="m-3">Home</a></li>
+                    <li><a href="#" class="m-3">Tesominal</a></li>
+                    <li><a href="#features" class="m-3">Features</a></li>
+                    <li><a href="#pricing" class="m-3">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3 ">
+                <button id="toggleTheme"class="relative w-16 h-8 bg-gray-300 dark:bg-blue-500 rounded-full p-1 transition ">
+                    <div class="w-6 h-6 bg-white rounded-full shadow-md transform transition translate-x-0 dark:translate-x-8"></div>
+                </button>
+                
+                <a href="#" class="m-3">Login</a>
+                <a href="#" class="m-3">Registar</a>
+            </div>
+        </nav>
+        <div class="hero p-5 flex items-center p-5">
+            <div class="w-<300px>">
+                <h1 class="font-bold text-4xl mb-5" >Manage Your Activity With <span class="text-blue-500">Wexy</span></h1>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam earum odit expedita, voluptatibus vero vitae dicta a ducimus repellendus dolore dolor itaque enim reiciendis beatae commodi quos quod, nemo porro, placeat ullam corrupti quae officiis quasi? Eos, sint impedit aut cupiditate autem repellendus quidem quo, ad, quas distinctio eius.</p>
+                <div class="mt-[10px] flex ">
+                    <button type="button" class="bg-blue-600 p-2 text-white rounded-xl">Get Started Today</button>
+                    <button type="button" class=" p-2 border border-gray-300 rounded-xl ms-5">Get Started Today</button>
+
+                </div>
+            </div>
+            <div>
+                <img src="images/hero-2-img.e00536899165fc0261f3.png" alt="" class="phone">
+            </div>
+        </div>
+    </header>
+    <section id="features" class="p-5">
+        <div class="flex justify-between items-center flex-col">
+            <h3 class="text-gray-500 text-sm">OUR FEATURES</h3>
+            <h2 class="text-3xl font-bold mb-[10px] mt-[10px]">Smart Solutions For Busy People</h2>
+            <p class="text-gray-500 w-[800px] text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus doloremque autem ea deserunt natus veritatis repellat ipsum! Quasi deserunt aliquid vero eius officia veniam, perferendis quis autem ducimus aut.</p>
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <img src="images/features-1.bc7b2e31dc2030c17a64.png" alt="" class="mt-[30px] w-[400px] me-[200px]">
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Discover your destination</h3>
+                <p class="text-gray-500 mt-[15px] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsa unde quos eaque?</p>
+                <div class="mt-5 flex items-center ">
+                    <i class="fa-solid fa-flag bg-blue-600 rounded-full text-white p-2 m-[2px]"></i>
+                    <h4 class="text-gray-500 text-xs ms-[5px]"><span class="text-blue-600 font-bold">The Wise therefore always holds </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempora sit quidem adipisci.</h4>
+                </div>
+                <div class="mt-5 flex items-center">
+                    <i class="fa-regular fa-file bg-blue-600 rounded-full text-white p-2 mt-[10px]"></i>
+                    <h4 class="text-gray-500 text-xs ms-[5px]">Lorem ipsum dolor sit amet.<span class="text-blue-600 font-bold">natus error accuasantium doloremqu </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+
+                </div>
+                <div class="mt-5 flex items-center">
+                    <i class="fa-solid fa-bag-shopping bg-blue-600 rounded-full text-white p-2 mt-[10px]"></i>
+                    <h4 class="text-gray-500 text-xs ms-[5px]">Lorem ipsum dolor sit amet.<span class="text-blue-600 font-bold">natus error accuasantium doloremqu </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="p-5">
+        <div class="flex justify-between items-center flex-col">
+            <h3 class="text-gray-500 text-sm">OUR PRICING</h3>
+            <h2 class="text-3xl font-bold mb-[10px] mt-[10px]">Pricing Plan</h2>
+            <p class="text-gray-500 w-[800px] text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus doloremque autem ea deserunt natus veritatis repellat </p>
+           <div class="flex w-64 bg-gray-200 dark:bg-gray-700 rounded-full p-1 mt-[10px]">
+                <button id="monthlyBtn" class="w-1/2 text-center py-1 rounded-full bg-blue-500 text-white font-medium">
+                  monthly
+                </button>
+                <button id="yearlyBtn" class="w-1/2 text-center py-1 rounded-full hover:bg-blue-500 hover:text-white font-medium transition-colors">
+                  Yearly
+                </button>
+            </div>
+        </div>
+        <div class="cards flex flex-wrap justify-center gap-6 ">
+           <div class="max-w-sm w-72 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-6 transition-colors duration-300 mt-[20px] border border-black border-transparent 
+              hover:border-blue-500 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <h3 class=" text-3xl font-bold">Free</h3>
+
+                <p class="mt-2 text-3xl font-bold text-blue-600 dark:text-white">
+                  $0.00
+                  <span class="text-base font-normal text-gray-500 dark:text-gray-400">/month</span>
+                </p>
+            
+                <ul class="mt-4 space-y-2">
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-500"></i>
+                    3 Projects
+                  </li>
+                   <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-database text-blue-500"></i>
+                    50 GB Storage
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-users text-blue-500"></i>
+                      Unlimited Contacts
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-earth-americas text-blue-500"></i>
+                      5 Domains
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-headphones text-blue-500"></i>
+                      Free Support <span class="text-red-500">24/7</span>
+                  </li>
+                </ul>
+            
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                    Choose Plan
+                </button>
+            </div>
+            <div class="relative max-w-sm w-72 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-6 transition-colors duration-300 mt-[20px] border border-transparent 
+              hover:border-blue-500 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+
+                <!-- Badge -->
+                <div class="absolute top-0 left-1/5 -right-0 transform -translate-x-1/2 bg-pink-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow z-8 overflow-visible">
+                  Most Popular
+                </div>
+            
+                <h3 class="text-3xl font-bold mt-4">Standard</h3>
+            
+                <p class="mt-2 text-3xl font-bold text-blue-600 dark:text-white">
+                  $29.00
+                  <span class="text-base font-normal text-gray-500 dark:text-gray-400">/month</span>
+                </p>
+            
+                <ul class="mt-4 space-y-2">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> 3 Projects</li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-database text-blue-500"></i> 50 GB Storage</li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-users text-blue-500"></i> Unlimited Contacts</li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-earth-americas text-blue-500"></i> 5 Domains</li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-headphones text-blue-500"></i> Free Support <span class="text-red-500">24/7</span></li>
+                </ul>
+            
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                  Choose Plan
+                </button>
+            </div>
+
+            <div class="max-w-sm w-72 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-6 transition-colors duration-300 mt-[20px]  border border-black border-transparent 
+              hover:border-blue-500 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <h3 class=" text-3xl font-bold">Entreprice</h3>
+
+                <p class="mt-2 text-3xl font-bold text-blue-600 dark:text-white">
+                  $49.00
+                  <span class="text-base font-normal text-gray-500 dark:text-gray-400">/month</span>
+                </p>
+            
+                <ul class="mt-4 space-y-2">
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-500"></i>
+                    3 Projects
+                  </li>
+                   <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-database text-blue-500"></i>
+                    50 GB Storage
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-users text-blue-500"></i>
+                      Unlimited Contacts
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-earth-americas text-blue-500"></i>
+                      5 Domains
+                  </li>
+                  <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-headphones text-blue-500"></i>
+                      Free Support <span class="text-red-500">24/7</span>
+                  </li>
+                </ul>
+            
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="mt-[20px] p-5">
+        <div class="flex justify-between items-center flex-col">
+            <h3 class="text-gray-500 text-sm">OUR CONTACT US </h3>
+            <h2 class="text-3xl font-bold mb-[10px] mt-[10px]">Get in Touch</h2>
+            <p class="text-gray-500 w-[800px] text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus doloremque autem ea deserunt natus veritatis repellat </p>
+           
+        </div>
+        
+        <div class="flex flex-col lg:flex-row gap-8 p-8">
+            <div class="flex-1 space-y-12">
+              <div class="mt-10">
+                <i class="fa-solid fa-robot text-yellow-500 text-4xl"></i>
+                <span class="font-bold text-3xl ml-2">Say Hello!</span>
+              </div>
+            
+              <div class="space-y-6">
+                <div >
+                  <i class="fa-solid fa-envelope text-blue-600 text-2xl"></i>
+                  <span class="text-blue-600 text-2xl font-bold ml-2">Email</span>
+                  <div class="text-center">
+                    <h5>wexy1@gmail.com</h5>
+                    <h5>wexy2@gmail.com</h5>
+                  </div>
+                </div>
+            
+                <div>
+                  <i class="fa-solid fa-phone text-blue-600 text-2xl"></i>
+                  <span class="text-blue-600 text-2xl font-bold ml-2">Phone</span>
+                  <div class="text-center">
+                    <h5>(+01)1234567800</h5>
+                    <h5>(+01)1234567800</h5>
+                  </div>
+                </div>
+            
+                <div class="">
+                  <i class="fa-solid fa-location-dot text-blue-600 text-2xl"></i>
+                  <span class="text-blue-600 text-2xl font-bold ml-2">Address</span>
+                  <div class="text-center">
+                    <h4 class="text-blue-600 text-xl">New York Office</h4>
+                    <h5>331 maple street , monroe avenue,CA 90017</h5>
+                    <h4 class="text-blue-600 text-xl">Auguilla Office</h4>
+                    <h5>2118 Bird Spring , monroe avenue,CA 90017</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- العمود الثاني: الفورم -->
+            <div class="flex-1">
+              <form class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg space-y-4">
+                <!-- الصفوف مثل ما عندك -->
+                <div class="flex flex-col md:flex-row md:gap-4">
+                  <input type="text" placeholder="First Name" class="flex-1 p-3 rounded-lg   dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white border border-black" />
+                  <input type="text" placeholder="Last Name" class="flex-1 p-3 rounded-lg border border-black dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white" />
+                </div>
+                <div class="flex flex-col md:flex-row md:gap-4">
+                  <input type="email" placeholder="Email" class="flex-1 p-3 rounded-lg border border-black dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white" />
+                  <input type="tel" placeholder="Phone" class="flex-1 p-3 rounded-lg border border-black dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white" />
+                </div>
+                <input type="text" placeholder="Subject" class="w-full p-3 rounded-lg border border-black dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white" />
+                <textarea placeholder="Message" rows="5" class="w-full p-3 rounded-lg border border-black dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:text-white"></textarea>
+                <button type="submit" class="flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                  SEND MESSAGE<i class="fa-solid fa-share"></i>
+                </button>
+              </form>
+            </div>
+        </div>
+    </section>
+    <footer class="p-[40px] bg-blue-950 text-white">
+        <div class="flex items-center justify-between ">
+            <div>
+                <h3 class="text-2xl font-bold">WEXY</h3>
+                <p>WEXY@gmail.com</p>
+                <p>+201989218</p>
+                <h3 class="text-xl font-bold">Follow us</h3>
+                <div class="flex items-center gap-4 mt-6">
+                   <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 
+                         hover:bg-blue-600 transition">
+                      <i class="fa-brands fa-facebook-f text-gray-700 dark:text-white hover:text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 
+                      hover:bg-sky-500 transition">
+                      <i class="fa-brands fa-twitter text-gray-700 dark:text-white hover:text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 
+                                       hover:bg-pink-500 transition">
+                      <i class="fa-brands fa-instagram text-gray-700 dark:text-white hover:text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 
+                                       hover:bg-blue-700 transition">
+                      <i class="fa-brands fa-linkedin-in text-gray-700 dark:text-white hover:text-white"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">About Us</h3>
+                <ul>
+                    <li><a href="#">Support center</a></li>
+                    <li><a href="#">Cystomer Support</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Popular Campagin</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">Our Information</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Teams & conditions</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Store Hours</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">My Account</h3>
+                <ul>
+                    <li><a href="#">Press Inquiries</a></li>
+                    <li><a href="#">Social Media Directories</a></li>
+                    <li><a href="#">Images & B-roll</a></li>
+                    <li><a href="#">Permissions</a></li>
+                    <li><a href="#">Speaker Requests</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold">Policy</h3>
+                <ul>
+                    <li><a href="#">Applications Security</a></li>
+                    <li><a href="#">Software Principles</a></li>
+                    <li><a href="#">Unwanted Software Policy</a></li>
+                    <li><a href="#">Responsible Supply Chain</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+   </div>
+   <script>
+    const toggleTheme = document.getElementById("toggleTheme");
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+
+    toggleTheme.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+
+      if (document.documentElement.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    });
+   const monthlyBtn = document.getElementById('monthlyBtn');
+    const yearlyBtn = document.getElementById('yearlyBtn');
+    
+    monthlyBtn.addEventListener('click', () => {
+      monthlyBtn.classList.add('bg-blue-500', 'text-white');
+      yearlyBtn.classList.remove('bg-blue-500', 'text-white');
+    });
+    
+    yearlyBtn.addEventListener('click', () => {
+      yearlyBtn.classList.add('bg-blue-500', 'text-white');
+      monthlyBtn.classList.remove('bg-blue-500', 'text-white');
+    });
+    const form = document.querySelector("form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // يمنع الريلود الافتراضي للفورم
+
+    // جمع البيانات
+    const firstName = form.querySelector('input[placeholder="First Name"]').value.trim();
+    const lastName = form.querySelector('input[placeholder="Last Name"]').value.trim();
+    const email = form.querySelector('input[placeholder="Email"]').value.trim();
+    const phone = form.querySelector('input[placeholder="Phone"]').value.trim();
+    const subject = form.querySelector('input[placeholder="Subject"]').value.trim();
+    const message = form.querySelector('textarea[placeholder="Message"]').value.trim();
+
+    if(!firstName || !lastName || !email || !message){
+      alert("Please fill in all required fields: First Name, Last Name, Email, and Message.");
+      return;
+    }
+
+
+    alert(`Thank you ${firstName}! Your message has been sent successfully.`);
+
+    form.reset();
+  });
+
+
+   </script>
+  
+</body>
+</html>
